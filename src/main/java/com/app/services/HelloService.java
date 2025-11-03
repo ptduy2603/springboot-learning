@@ -1,10 +1,11 @@
 package com.app.services;
 
+import com.app.Content;
 import org.springframework.stereotype.Service;
 
 @Service
 public class HelloService {
-    public String sayHello() {
-        return "Hello world from Spring Boot BE";
+    public Content sayHello() {
+        return new Content("Hello! Welcome to my server","Duy Pham dev");
     }
 }
